@@ -10,10 +10,10 @@ abstract class CartlocalDataSource {
   void cartDecrease(int index);
 }
 
-class CartlocalDataSourceHttp implements CartlocalDataSource {
+class CartlocalDataSourceHive implements CartlocalDataSource {
   final Box<CartProductModel> box;
 
-  CartlocalDataSourceHttp({required this.box});
+  CartlocalDataSourceHive({required this.box});
 
   @override
   void addToCart(CartProductModel cartProduct) {

@@ -7,7 +7,7 @@ class GetCartUseCase {
 
   GetCartUseCase({required this.repostiory});
 
-  List<CartProduct> call({required String box}) {
+  List<CartProduct> call({required String box}) { 
     return repostiory.getCart(box);
   }
 }
